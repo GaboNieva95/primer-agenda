@@ -15,13 +15,13 @@ const cargarContacto = (local, parentNode) => {
 const crearContacto = (parentNode, contacto) => {
   const divContacto = document.createElement('div');
   const nombreContacto = document.createElement('h3');
-  const númeroContacto = document.createElement('p');
-  const direcciónContacto = document.createElement('p');
+  const numeroContacto = document.createElement('p');
+  const direccionContacto = document.createElement('p');
   const iconoBorrar = document.createElement('span');
 
   nombreContacto.innerHTML = contacto.nombre;
-  númeroContacto.innerHTML = contacto.número;
-  direcciónContacto.innerHTML = contacto.dirección;
+  numeroContacto.innerHTML = contacto.numero;
+  direccionContacto.innerHTML = contacto.direccion;
   iconoBorrar.innerHTML = 'delete_forever';
 
   divContacto.classList.add('tarea');
@@ -33,8 +33,8 @@ const crearContacto = (parentNode, contacto) => {
   };
 
   divContacto.appendChild(nombreContacto);
-  divContacto.appendChild(númeroContacto);
-  divContacto.appendChild(direcciónContacto);
+  divContacto.appendChild(numeroContacto);
+  divContacto.appendChild(direccionContacto);
   divContacto.appendChild(iconoBorrar);
 
   parentNode.appendChild(divContacto);

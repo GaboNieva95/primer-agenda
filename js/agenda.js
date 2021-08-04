@@ -1,6 +1,6 @@
 const nombre = document.querySelector('.nombre');
-const número = document.querySelector('.número');
-const dirección = document.querySelector('.dirección');
+const numero = document.querySelector('.numero');
+const direccion = document.querySelector('.direccion');
 const btnAgregartarea = document.querySelector('.btn-agregar-tarea');
 
 const listadoTareas = document.querySelector('.listado-de-tareas');
@@ -11,8 +11,8 @@ btnAgregartarea.onclick = () => {
   const contacto = {
     id: Math.random(1, 100),
     nombre: nombre.value,
-    número: número.value,
-    dirección: dirección.value
+    numero: numero.value,
+    direccion: direccion.value
   };
   
   guardarContacto(local, contacto);
